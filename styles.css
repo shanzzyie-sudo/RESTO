@@ -1,0 +1,155 @@
+/* --- General Styles --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background-color: #8b0000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  animation: fadeInHero 2s ease-in;
+}
+
+@keyframes fadeInHero {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  font-size: 2em;
+  border-radius: 10px;
+  text-shadow: 2px 2px 6px #000;
+}
+
+/* --- About Section --- */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  color: #8b0000;
+}
+
+.about p {
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+
+/* --- Special Dishes Section --- */
+.specials {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.specials h2 {
+  color: #8b0000;
+  margin-bottom: 40px;
+}
+
+.dishes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.dish {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.dish:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dish img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.dish:hover img {
+  transform: scale(1.1);
+}
+
+.dish p {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  animation: fadeInFooter 2s ease-in;
+}
+
+@keyframes fadeInFooter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
